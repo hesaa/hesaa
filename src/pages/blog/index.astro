@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleListItem from '../../components/ArticleListItem.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
+---
+
+<BaseLayout title="Blog - Hesaa">
+  <div class="mx-auto max-w-[80ch] px-6 py-16">
+    <h1 class="text-4xl font-bold text-primary mb-8">Blog</h1>
+    <div>
+      {posts.map(post => (
+        <ArticleListItem
+          title={post.data.title}
+          date={post.data.date}
+          excerpt={post.data.excerpt}
+          tags={post.data.tags}
+          slug={post.id}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

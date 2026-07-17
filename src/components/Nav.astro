@@ -1,0 +1,19 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+const pathname = Astro.url.pathname;
+const isActive = (path: string) => pathname === path || pathname.startsWith(path + '/');
+---
+<header class="py-6">
+  <nav class="mx-auto max-w-[80ch] px-6 flex justify-between items-center">
+    <a href="/" class="text-primary font-semibold text-base hover:text-interactive transition-colors">
+      Hesaa
+    </a>
+    <div class="flex items-center gap-6">
+      <a href="/blog" class:list={["text-base transition-colors", isActive('/blog') ? "text-primary font-medium" : "text-secondary hover:text-primary"]}>Blog</a>
+      <a href="/projects" class:list={["text-base transition-colors", isActive('/projects') ? "text-primary font-medium" : "text-secondary hover:text-primary"]}>Projects</a>
+      <a href="/about" class:list={["text-base transition-colors", isActive('/about') ? "text-primary font-medium" : "text-secondary hover:text-primary"]}>About</a>
+      <ThemeToggle />
+    </div>
+  </nav>
+</header>
