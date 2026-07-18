@@ -13,4 +13,4 @@ Software Engineer based in Bogor, Indonesia. I build high-performance, secure ba
 
 ### Connect
 
-[Email](mailto:hesa7511@gmail.com) · [GitHub](https://github.com/hesaa) · [LinkedIn](https://linkedin.com/in/hesaa)
+[Email](mailto:hesa7511@gmail.com) · [GitHub](https://github.com/hesaa) · [LinkedIn](https://www.linkedin.com/in/mahesa-ibrahim-6a0184186)
