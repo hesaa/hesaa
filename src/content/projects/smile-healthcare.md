@@ -1,7 +1,7 @@
 ---
 title: "SMILE — National Healthcare System"
 date: "Jun 2025"
-tags: ["Node.js", "TypeScript", "Healthcare"]
+tags: ["Hono.js", "TypeScript", "Healthcare"]
 excerpt: "Back-end development for Indonesia's national healthcare information system under the Ministry of Health."
 description: "Back-end development for Indonesia's national healthcare information system."
 url: "https://smile.kemkes.go.id/"
