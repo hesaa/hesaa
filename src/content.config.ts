@@ -23,6 +23,7 @@ const projects = defineCollection({
     description: z.string().optional(),
     image: z.string().optional(),
     url: z.string().optional(),
+    category: z.enum(['personal', 'work']).default('work'),
   }),
 });
 

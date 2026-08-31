@@ -6,9 +6,10 @@ interface Props {
   tags?: string[];
   slug: string;
   image?: string;
+  category?: 'personal' | 'work';
 }
 
-const { title, date, excerpt, tags = [], slug, image } = Astro.props;
+const { title, date, excerpt, tags = [], slug, image, category = 'work' } = Astro.props;
 ---
 
 <article class="py-8">
@@ -21,7 +22,13 @@ const { title, date, excerpt, tags = [], slug, image } = Astro.props;
     <a href={`/projects/${slug}`} class="text-lg font-medium text-primary hover:text-interactive transition-colors">
       {title}
     </a>
-    <time class="text-sm text-secondary">{date}</time>
+    <div class="flex items-center gap-2">
+      <time class="text-sm text-secondary">{date}</time>
+      <span class:list={[
+        "text-xs font-medium px-2 py-0.5 rounded-full",
+        category === 'personal' ? "bg-blue-500/10 text-blue-500" : "bg-emerald-500/10 text-emerald-500"
+      ]}>{category}</span>
+    </div>
   </div>
   <p class="mt-2 text-base text-primary leading-relaxed">{excerpt}</p>
   {tags.length > 0 && (

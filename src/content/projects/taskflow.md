@@ -5,6 +5,7 @@ tags: ["TypeScript", "Next.js", "Express.js", "AI"]
 excerpt: "Full-stack AI-powered task management platform with natural language command processing and kanban board."
 description: "AI-powered task management platform with natural language command processing."
 url: https://taskflow.hesaa.xyz
+category: personal
 ---
 
 Taskflow is a full-stack task management platform with natural language AI command processing. I built the entire system from a pnpm monorepo with Turborepo, handling both the API and web application.

@@ -5,6 +5,7 @@ tags: ["Hono.js", "TypeScript", "Healthcare"]
 excerpt: "Back-end development for Indonesia's national healthcare information system under the Ministry of Health."
 description: "Back-end development for Indonesia's national healthcare information system."
 url: "https://smile.kemkes.go.id/"
+category: work
 ---
 
 SMILE is a national healthcare information system developed for the Indonesian Ministry of Health. I served as a Back-End Developer, building and maintaining core features for the platform.

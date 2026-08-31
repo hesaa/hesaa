@@ -5,6 +5,7 @@ tags: ["PHP", "Laravel", "Python", "FinTech"]
 excerpt: "High-volume multi-biller PPOB and POS system handling marketplace transactions, payment gateways, and escrow flows."
 description: "Back-end architecture for a high-volume PPOB and POS platform."
 url: "https://awanbisnis.com"
+category: work
 ---
 
 AWAN is a high-volume multi-biller PPOB and POS platform serving businesses across Indonesia. I engineered the back-end architecture, managing complex marketplace transaction flows from cart to settlement.

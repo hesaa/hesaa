@@ -8,9 +8,10 @@ interface Props {
   description?: string;
   image?: string;
   url?: string;
+  category?: 'personal' | 'work';
 }
 
-const { title, date, tags = [], description, image, url } = Astro.props;
+const { title, date, tags = [], description, image, url, category = 'work' } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -22,6 +23,10 @@ const { title, date, tags = [], description, image, url } = Astro.props;
       <h1 class="text-4xl font-bold text-primary mb-2">{title}</h1>
       <div class="flex items-center gap-3">
         <time class="text-sm text-secondary">{date}</time>
+        <span class:list={[
+          "text-xs font-medium px-2 py-0.5 rounded-full",
+          category === 'personal' ? "bg-blue-500/10 text-blue-500" : "bg-emerald-500/10 text-emerald-500"
+        ]}>{category}</span>
         {tags.length > 0 && (
           <span class="text-sm text-secondary">· {tags.join(', ')}</span>
         )}
