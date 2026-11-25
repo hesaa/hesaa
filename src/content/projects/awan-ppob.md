@@ -16,11 +16,11 @@ Full Stack Developer at PT. Aplikasi Wirausaha Nusantara (Oct 2019 – May 2024)
 
 ## What I Did
 
-- Architected the complete back-end handling concurrent financial transactions at scale
-- Integrated multiple third-party payment gateways and bank APIs for automated top-up, e-wallet, and escrow
-- Designed scalable database schemas with optimized indexing for secure transaction processing
+- Engineered the back-end for cart, checkout, payment, and settlement flows, improving transaction performance by 91% — from 10 seconds to under 900 ms per transaction
+- Integrated 4 third-party payment gateways and bank APIs to automate top-ups, e-wallet transactions, and escrow, enabling instant processing
+- Designed scalable MySQL schemas with optimized indexing to handle concurrent financial transactions securely
 - Implemented SQL injection prevention, secure payment flows, and comprehensive authentication systems
-- MIgration PPOB and Topup system from Codeigniter 3 to FastAPI
+- Migrated the PPOB and top-up systems from CodeIgniter 3 to FastAPI
 
 ## Tech Stack
 

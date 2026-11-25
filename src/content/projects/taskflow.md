@@ -1,6 +1,6 @@
 ---
 title: "Taskflow — AI Task Management"
-date: "Jul 2026"
+date: "Jun 2026"
 tags: ["TypeScript", "Next.js", "Express.js", "AI"]
 excerpt: "Full-stack AI-powered task management platform with natural language command processing and kanban board."
 description: "AI-powered task management platform with natural language command processing."
